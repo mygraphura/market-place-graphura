@@ -1,0 +1,189 @@
+.project-card {
+  background: white;
+  border: 1px solid #dce2ef;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(18, 28, 45, 0.04);
+  animation: card-rise 0.3s ease;
+}
+
+@keyframes card-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-top,
+.card-bottom,
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top {
+  color: #7b85a6;
+  font-size: 0.9rem;
+}
+
+.star {
+  background: transparent;
+  border: none;
+  color: #b1b8cf;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.star.on {
+  color: #f5ac00;
+}
+
+.project-main {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.thumb-preview {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #dce3ef;
+}
+
+.icon-pill {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #3f4966;
+}
+
+.project-main h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #27314b;
+}
+
+.project-main p {
+  margin: 4px 0 0;
+  color: #6f7ba0;
+}
+
+.meta-inline {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.meta-inline span {
+  background: #eef3fc;
+  color: #4a5c88;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  padding: 4px 10px;
+}
+
+.card-tags {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.card-tag {
+  background: #42558f;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+}
+
+.card-gallery {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.card-gallery-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #dce3ef;
+}
+
+.gallery-more {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px dashed #c7d3ea;
+  display: grid;
+  place-items: center;
+  color: #5b6a92;
+  font-size: 0.78rem;
+  background: #f7f9ff;
+  padding: 0 6px;
+}
+
+.card-actions {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.card-actions button {
+  border: 1px solid #d6dff0;
+  background: #f8fafe;
+  color: #49587f;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.card-actions .danger {
+  color: #be2d55;
+}
+
+.card-bottom {
+  margin-top: 12px;
+  color: #6e7a9e;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatars span {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #dce7fd;
+  border: 2px solid white;
+  display: grid;
+  place-items: center;
+  font-size: 0.72rem;
+  color: #315191;
+  margin-right: -7px;
+}
+
+@media (max-width: 640px) {
+  .card-gallery-image,
+  .gallery-more {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+  }
+}
